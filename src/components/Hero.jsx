@@ -1,3 +1,5 @@
+import myPhoto from '/My.jpg'
+
 function Hero({ language }) {
   const text = {
     ru: {
@@ -16,7 +18,7 @@ function Hero({ language }) {
   return (
     <section className="hero">
       <div className="photo-placeholder">
-        <img src="/My.jpg" alt="" />
+        <img src={myPhoto} alt="Mark" />
       </div>
 
       <div className="hero-text">
