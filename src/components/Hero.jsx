@@ -1,5 +1,3 @@
-import myPhoto from '/My.jpg'
-
 function Hero({ language }) {
   const text = {
     ru: {
@@ -14,6 +12,8 @@ function Hero({ language }) {
         'I am 17 years old and live in Tashkent. Below are projects I have created.'
     }
   }
+
+  const myPhoto = `${import.meta.env.BASE_URL}My.jpg`
 
   return (
     <section className="hero">
